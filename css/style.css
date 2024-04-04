@@ -114,14 +114,9 @@ nav.menu-header {
     grid-template-rows: 2fr 1fr 2fr repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding: 10px;
+    padding: 0;
+    margin: 100px;
     }
-
-.box1 {
-  background-color: white;
-  height: 100px;
-  width: 100px;
-}
 
 .image {
   width: 100%;
@@ -130,8 +125,24 @@ nav.menu-header {
 	background-size: cover;
 }
 
+.box1 {
+  background-color: white;
+  height: 400px;
+  width: 300px;
+}
+
 .box1-image {
   background-image: url(/assets/selfportrait.JPG)
+}
+
+.box2 {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+}
+
+.box2-image {
+  background-image: url(/assets/mom.JPG)
 }
 
 
