@@ -14,7 +14,7 @@ olive: #75782f
 
 body {
     margin: 0;
-    background: lightgray;
+    /* background: lightgray; */
     max-width: 100vw;
 }
 
@@ -27,8 +27,24 @@ a {
 }
 
 
+nav.menu-header {
+  background-color: #d83d3d;
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+  margin: 0;
+}
 
-
+.menu-bar {
+    font-family: garamond-premier-pro, serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 1px;
+}
 
 
   
@@ -59,7 +75,7 @@ https://stackoverflow.com/questions/71355574/smooth-animation-loop-for-horizonta
   }
   
   span.top-scroll {
-    font-size: 18px;
+    font-size: 20px;
     font-family: garamond-premier-pro, serif;
     font-weight: 600;
     display: inline-block;
@@ -82,31 +98,17 @@ https://stackoverflow.com/questions/71355574/smooth-animation-loop-for-horizonta
 
 
 
-.logo {
+div.logo {
     /* background:pink; */
     padding-top: 50px;
     padding-bottom: 50px;
     max-width: 100vw;
-}
-
-nav.menu-header {
-    background-color: #d83d3d;
     display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-    margin: 0;
+    flex-direction: column;
+    justify-content: auto;
 }
 
-.menu-bar {
-    font-family: garamond-premier-pro, serif;
-    font-weight: 400;
-    color: white;
-    font-size: 18px;
-    padding: 0;
-    margin: 5px;
-}
+
 
 
 
@@ -115,17 +117,16 @@ nav.menu-header {
 
 
 
-
 .main-1 {
-    background-color: orange;
+    /* background-color: orange; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(auto);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 0;
     max-width: 100vw;
-    margin: 100px;
+    margin: 200px;
     }
 
 .image {
@@ -146,8 +147,12 @@ nav.menu-header {
   width: 350px;
   grid-column: 1/2;
   grid-row: 1/3;
-  opacity: 50%;
+  /* opacity: 50%; */
   margin-right: 20px;
+}
+
+.box1-image {
+  background-image: url(/assets/selfportrait.JPG)
 }
 
 .box2 {
@@ -157,17 +162,21 @@ nav.menu-header {
   width: 250px;
   grid-column: 2/3;
   grid-row: 1/3;
-  opacity: 50%;
+  /* opacity: 50%; */
+  justify-self: center;
 }
-
+.box2-image {
+  background-image: url(/assets/mom.JPG)
+}
 .box3 {
   /* 2 still lifes  */
   background-color: white;
   height: 200px;
   width: 300px;
-  grid-column: 3/3;
+  grid-column: 3/4;
+  justify-self: right;
   grid-row: 1/1;
-  opacity: 50%;
+  /* opacity: 50%; */
 }
 
 
@@ -178,74 +187,257 @@ nav.menu-header {
   width: 300px;
   grid-column: 2/3;
   grid-row: 2/3;
-  opacity: 50%;
+  /* opacity: 50%; */
   margin-top: 100px;
   margin-left: 40px;
+  justify-self: center;
 }
-
+.box4-image {
+  background-image: url(/assets/grandpa.heic)
+}
 .box5 {
   /* watercolor */
   background-color: white;
   height: 350px;
   width: 250px;
   grid-row: 2/3;
-  opacity: 50%;
+  /* opacity: 50%; */
   margin-top: 50px;
   margin-left: 50px;
+  justify-self: right;
 }
-
+.box5-image {
+  background-image: url(/assets/watercolor.JPG)
+}
 .box6 {
   /* fresh out the orphanage */
   background-color: white;
   height: 250px;
   width: 350px;
-  opacity: 50%;
+  /* opacity: 50%; */
   margin-top: -45px;
 }
-
+.box6-image {
+  background-image: url(/assets/adoption.JPG)
+}
 .box7 {
   /* rainbow garden food */
   background-color: white;
   height: 180px;
   width: 250px;
-  opacity: 50%;
+  /* opacity: 50%; */
   grid-column: 2/2;
   margin-left: 90px;
   margin-top: 50px;
+  justify-self: right;
 
 }
-
+.box7-image {
+  background-image: url(/assets/IMG_3770.JPG)
+}
 .box8 {
   /* white swan */
   background-color: white;
   height: 400px;
   width: 300px;
-  opacity: 50%;
+  /* opacity: 50%; */
   margin-top: 50px;
   grid-column: 3/3;
   grid-row: 3/5;
+  justify-self: right;
 }
 
-
+.box8-image {
+  background-image: url(/assets/white_swan_copy.JPG)
+}
 
 .box9 {
   /* mom reading adoption book */
   background-color: white;
-  height: 320px;
-  width: 250px;
+  height: 400px;
+  width: 300px;
   grid-column: 1/2;
   grid-row: 4/4;
+  /* opacity: 50%; */
+  margin-top: 20px;
 }
 
-
+.box9-image {
+  background-image: url(/assets/Finding\ Place\ copy.jpg)
+}
 
 .box10 {
+  /* flowers */
   background-color: white;
   height: 200px;
   width: 200px;
+  /* opacity: 50%; */
+  grid-column: 1/3;
+  grid-row: 4/4;
+  margin-left: 320px;
+  margin-top: 20px;
+  justify-self: left;
+}
+.box10-image {
+  background-image: url(/assets/flowers.JPG)
+}
+.box11 {
+  /* cat */
+  background-color: white;
+  height: 200px;
+  width: 170px;
+  /* opacity: 50%; */
+  grid-column: 2/3;
+  grid-row: 4/4;
+  margin-top: 225px;
+  margin-left: 150px;
+  justify-self: left;
+}
+.box11-image {
+  background-image: url(/assets/cat.JPG)
+}
+.box12 {
+  /* billie and gape */
+  background-color: white;
+  height: 200px;
+  width: 300px;
+  /* opacity: 50%; */
+  grid-column: 3/3;
+  grid-row: 4/5;
+  margin-top: 300px;
+  justify-self: right;
+}
+.box12-image {
+  background-image: url(/assets/swirls.JPG)
+}
+.box13 {
+  /* hunan girl 1*/
+  background-color: white;
+  height: 200px;
+  width: 300px;
+  /* opacity: 50%; */
+  grid-column: 1/1;
+  grid-row: 4/6;
+  margin-top: 480px;
+}
+.box13-image {
+  background-image: url(/assets/hunan1.JPG)
+}
+.box14 {
+  /* hunan girl 2 */
+  background-color: white;
+  height: 200px;
+  width: 300px;
+  /* opacity: 50%; */
+  grid-column: 1/3;
+  grid-row: 4/6;
+  margin-top: 480px;
+  margin-left: 310px;
+}
+.box14-image {
+  background-image: url(/assets/hunan2.JPG)
+}
+.box15 {
+  /* final smidgen */
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  /* opacity: 50%; */
+  grid-column: 3/3;
+  grid-row:5/5;
+  margin-top: 20px;
+  margin-left: 150px;
+  justify-self: right;
+}
+.box15-image {
+  background-image: url(/assets/swirls.JPG)
+}
+.box16 {
+  /* graphite final 1 */
+  background-color: white;
+  height: 250px;
+  width: 200px;
+  /* opacity: 50%; */
+  grid-column:1/3;
+  grid-row: 5/6;
+  margin-top: 230px;
+}
+.box16-image {
+  background-image: url(/assets/drawing1.JPG)
+}
+.box17 {
+  /* graphite final 2 */
+  background-color: white;
+  height: 250px;
+  width: 200px;
+  /* opacity: 50%; */
+  grid-column:1/3;
+  grid-row: 5/6;
+  margin-top: 230px;
+  margin-left: 210px;
+}
+.box17-image {
+  background-image: url(/assets/drawing2.JPG)
+}
+.box18 {
+  /* group */
+  background-color: white;
+  height: 220px;
+  width: 220px;
+  /* opacity: 50%; */
+  grid-column: 2/4;
+  grid-row:6/7;
+  margin-left: 200px;
+}
+.box19 {
+  /* solo */
+  background-color: white;
+  height: 300px;
+  width: 220px;
+  /* opacity: 50%; */
+  grid-column: 3/4;
+  grid-row:5/7;
+  margin-left: 80px;
+  margin-top: 410px;
+  justify-self: right;
 }
 
+.box20 {
+  /* duo big */
+  background-color: white;
+  height: 300px;
+  width: 220px;
+  /* opacity: 50%; */
+  grid-row: 6/7;
+  grid-column: 1/2;
+  margin-top: 150px;
+}
 
+.box21 {
+  /* duo sitting */
+  background-color: white;
+  height: 250px;
+  width: 200px;
+  /* opacity: 50%; */
+  grid-row: 6/7;
+  grid-column: 2/4;
+  margin-top: 300px;
+  margin-left: 50px;
+  justify-self: left;
+}
+
+.box22 {
+  /* duo small */
+  background-color: white;
+  height: 250px;
+  width: 200px;
+  /* opacity: 50%; */
+  grid-row: 6/7;
+  grid-column: 2/4;
+  margin-top: 300px;
+  margin-left: 260px;
+  justify-self: left;
+}
 
 
 
@@ -271,13 +463,15 @@ span.material-symbols-outlined.awardStar {
     position: fixed;
     flex-direction: column;
     top: 0;
-    right: -300px;
-    width: 300px;
+    right: -515px;
+    width: 450px;
     height: 100%;
     background: #d83d3d;
     color: white;
-    transition: right 0.5s ease;
+    transition: right 1s ease;
     padding-top: 60px;
+    padding-left: 15px;
+    /* padding-right: 10px; */
   }
 
   .menu a {
@@ -305,7 +499,7 @@ span.material-symbols-outlined.awardStar {
     color: #d83d3d;
     border: none;
     cursor: pointer;
-    /* z-index: 10000; */
+    z-index: 100000000;
   }
 
   .toggleMenuOpen {
@@ -314,6 +508,22 @@ span.material-symbols-outlined.awardStar {
   }
 
 
+.headshotHeader{
+  font-family: garamond-premier-pro, serif;
+  font-weight: 700;
+  color: white;
+  font-size: 35px;
+}
+
+.headshot-box {
+  background-color: white;
+  height: 500px;
+  width: 350px;
+}
+
+.headshot-box-image {
+  background-image: url(/assets/headshot.JPG)
+}
 
 
 
@@ -355,7 +565,7 @@ span.material-symbols-outlined.awardStar {
 }
 
 .material-symbols-outlined.default-mode {
-	color: pink;
+	color: #4d0601;
 	visibility: hidden;
 }
 
@@ -373,7 +583,7 @@ span.material-symbols-outlined.awardStar {
 }
 
 .state-night-mode {
-	background-color: pink;
+	background-color: #4d0601;
 	/* color: white; */
 }
 

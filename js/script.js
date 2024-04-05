@@ -15,9 +15,20 @@
 const toggleMenu = document.getElementById("toggleMenu");
 toggleMenu.addEventListener("click", mobileMenu);
 
+let page3 = document.querySelector('body');
+let menuBar = document.getElementsByClassName('menu');
+
 function mobileMenu() {
   let menu = document.getElementById("menu");
   menu.classList.toggle("visible");
+  if (menuBar.style.visibility === 'visible') {
+    page3.style.opacity= "30%"; 
+    menuBar.style.opacity='100%';
+  } else {
+    menu.style.visibility = "visible";
+    page3.style.opacity= "100%";
+
+  }
 }
 
 
