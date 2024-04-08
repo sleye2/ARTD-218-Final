@@ -12,8 +12,8 @@
 
 // ABOUT SLIDER MENU BAR -- AWARD STAR ICON
 
-const toggleMenu = document.getElementById("toggleMenu");
-toggleMenu.addEventListener("click", mobileMenu);
+const toggleMenus = document.getElementById("toggleMenu");
+toggleMenus.addEventListener("click", mobileMenu);
 
 let page3 = document.querySelector('body');
 let menuBar = document.getElementsByClassName('menu');
@@ -24,6 +24,7 @@ function mobileMenu() {
   if (menuBar.style.visibility === 'visible') {
     page3.style.opacity= "30%"; 
     menuBar.style.opacity='100%';
+    document.getElementById("awardStarWhite").style.backgroundcolor = "white";
   } else {
     menu.style.visibility = "visible";
     page3.style.opacity= "100%";
@@ -36,60 +37,68 @@ function mobileMenu() {
 
 
 
-
-
-
 // DARK MODE
+
+
 
 let defaultModeBtn = document.querySelector('.default-mode');
 
 let nightModeBtn = document.querySelector('.night-mode');
 
+
 let page = document.querySelector('body');
+
 
 defaultModeBtn.addEventListener('click', changeMode);
 
 nightModeBtn.addEventListener('click', changeMode);
 
+
+
 function changeMode() {
   console.log('this is working');
   page.classList.toggle('state-night-mode');
+  
 
-  if (defaultModeBtn.style.visibility === 'visible') {
-    defaultModeBtn.style.visibility = "hidden";
-    nightModeBtn.style.visibility = "visible";
-  } else {
-    defaultModeBtn.style.visibility = "visible";
-    nightModeBtn.style.visibility = "hidden";
+  if(defaultModeBtn.style.visibility==='visible'){
+    defaultModeBtn.style.visibility="hidden";
+    nightModeBtn.style.visibility="visible";
+    
+    // document.getElementById("capBox").style.backgroundColor = "white";
+}else{
+    defaultModeBtn.style.visibility="visible";
+    nightModeBtn.style.visibility="hidden";
+    
+    // document.getElementById("capBox").style.backgroundColor = "pink";
 
-  }
+}
 
 }
 
 
 // // DAY MODE
 
-let defaultModeBtn2 = document.querySelector('.default-mode2');
+// let defaultModeBtn2 = document.querySelector('.default-mode2');
 
-let dayModeBtn = document.querySelector('.day-mode');
+// let dayModeBtn = document.querySelector('.day-mode');
 
-let page2 = document.querySelector('body');
+// let page2 = document.querySelector('body');
 
-defaultModeBtn2.addEventListener('click', changeMode2);
+// defaultModeBtn2.addEventListener('click', changeMode2);
 
-dayModeBtn.addEventListener('click', changeMode2);
+// dayModeBtn.addEventListener('click', changeMode2);
 
-function changeMode2() {
-  console.log('this is working');
-  page2.classList.toggle('state-night-mode');
+// function changeMode2() {
+//   console.log('this is working');
+//   page2.classList.toggle('state-night-mode');
 
-  if (defaultModeBtn2.style.visibility === 'visible') {
-    defaultModeBtn2.style.visibility = "hidden";
-    dayModeBtn.style.visibility = "visible";
-  } else {
-    defaultModeBtn2.style.visibility = "visible";
-    dayModeBtn.style.visibility = "hidden";
+//   if (defaultModeBtn2.style.visibility === 'visible') {
+//     defaultModeBtn2.style.visibility = "hidden";
+//     dayModeBtn.style.visibility = "visible";
+//   } else {
+//     defaultModeBtn2.style.visibility = "visible";
+//     dayModeBtn.style.visibility = "hidden";
 
-  }
+//   }
 
-}
+// }
