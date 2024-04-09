@@ -56,12 +56,13 @@
 
 
 		<main>
-
+			<i class="material-symbols-outlined awardStar" id="toggleMenu" id="awardStarWhite" >
+				award_star
+			  </i>
+			  
 			<nav id="menu" class="menu">
-				<i class="material-symbols-outlined awardStar" id="toggleMenu" id="awardStarWhite" >
-				  award_star
-				</i>
-				<div>
+				
+				<div id="profileBox">
 				  <h2 class="headshotHeader"> Sylvie Leyerle</h2>
 				  <div class="headshot-box"><div class="image headshot-box-image"></div></div>
 				  <div class="headshot-cap">
@@ -81,11 +82,20 @@
 
 
 			<!-- artwork-->
-			<!-- <div class="artwork-section">
-				<img class="artwork" src="assets/artwork.svg" alt="artworksvg" height=200px; />
-			</div> -->
+			<div class="artwork-svg">
+				<img class="artwork" src="assets/artwork.svg" alt="artworksvg" height=400px; />
+			</div>
+
+
+			<!-- photography -->
+			<div class="photography-svg">
+				<img class="photography" src="assets/photography.svg" alt="photosvg" height=600px; />
+			</div>
+
+
+			<!-- MAIN SECTION -->
 			
-			<div class="main-1">
+			<div class="main-1"  id='capBox'>
 				<div class="box1">
 					<div class="image box1-image">
 					</div>
@@ -99,7 +109,7 @@
 				<div class="box2">
 					<div class="image box2-image">
 					</div>
-					<div id='capBox' class="f-image-cap">
+					<div class="f-image-cap">
 						<h3 class="image-cap">Portrait of Mother</h3>
 						<h4 class="image-cap">Acrylic on canvas</h4>
 						<h4 class="image-cap">10 x 10</h4>
@@ -329,10 +339,7 @@
 			</div>
 
 
-			<!-- photography -->
-			<div class="photography-section">
-				<img class="photography" src="assets/photography.svg" alt="photosvg" height=250px; />
-			</div>
+			
 			
 
 		</main>
@@ -364,12 +371,7 @@
 		</i>
 	</div>
 
-	<div class="change-mode2">
-		<i class="material-symbols-outlined mode-button default-mode2">sunny
-		</i>
-		<i class="material-symbols-outlined mode-button day-mode">sunny
-		</i>
-	</div>
+
 
 	<!-- JavaScript Files -->
 	<script src="js/script.js" defer></script>

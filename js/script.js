@@ -15,19 +15,15 @@
 const toggleMenus = document.getElementById("toggleMenu");
 toggleMenus.addEventListener("click", mobileMenu);
 
-let page3 = document.querySelector('body');
 let menuBar = document.getElementsByClassName('menu');
 
 function mobileMenu() {
   let menu = document.getElementById("menu");
   menu.classList.toggle("visible");
+
   if (menuBar.style.visibility === 'visible') {
-    page3.style.opacity= "30%"; 
-    menuBar.style.opacity='100%';
-    document.getElementById("awardStarWhite").style.backgroundcolor = "white";
   } else {
     menu.style.visibility = "visible";
-    page3.style.opacity= "100%";
 
   }
 }
@@ -64,12 +60,12 @@ function changeMode() {
     defaultModeBtn.style.visibility="hidden";
     nightModeBtn.style.visibility="visible";
     
-    // document.getElementById("capBox").style.backgroundColor = "white";
+    document.getElementById("capBox").style.backgroundColor = "white";
 }else{
     defaultModeBtn.style.visibility="visible";
     nightModeBtn.style.visibility="hidden";
     
-    // document.getElementById("capBox").style.backgroundColor = "pink";
+    document.getElementById("capBox").style.backgroundColor = "pink";
 
 }
 
