@@ -26,11 +26,12 @@ function mobileMenu() {
     toggleMenu.style.color ='white';
     toggleMenu.style.marginTop ='25px';
     toggleMenu.style.marginRight ='30px';
+    document.getElementById("changeMode").style.visibility = "hidden";
   } else {
     toggleMenu.style.color ='#d83d3d';
     toggleMenu.style.marginTop ='0px';
     toggleMenu.style.marginRight ='0px';
-    
+    document.getElementById("changeMode").style.visibility = "visible";
   }
 }
 
