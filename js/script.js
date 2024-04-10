@@ -24,7 +24,7 @@ function mobileMenu() {
 
   if(menu.classList.contains("visible")){
     toggleMenu.style.color ='white';
-    toggleMenu.style.marginTop ='30px';
+    toggleMenu.style.marginTop ='25px';
     toggleMenu.style.marginRight ='30px';
   } else {
     toggleMenu.style.color ='#d83d3d';
