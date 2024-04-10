@@ -11,6 +11,7 @@
 
 
 // ABOUT SLIDER MENU BAR -- AWARD STAR ICON
+// when slider menu is out: darkmode button should be hidden, page should lower opacity, button moves, button changes color
 
 const toggleMenu = document.getElementById("toggleMenu");
 
@@ -18,20 +19,30 @@ toggleMenu.addEventListener("click", mobileMenu);
 
 let menuBar = document.getElementsByClassName('menu');
 
+let menu = document.querySelector('menu');
+
 function mobileMenu() {
   let menu = document.getElementById("menu");
   menu.classList.toggle("visible");
+  console.log('this is working');
 
   if(menu.classList.contains("visible")){
     toggleMenu.style.color ='white';
     toggleMenu.style.marginTop ='25px';
     toggleMenu.style.marginRight ='30px';
     document.getElementById("changeMode").style.visibility = "hidden";
+
+
+    // page.style.opacity = '50%';
+    // document.getElementById('body').style.opacity = '50%';
+    
   } else {
     toggleMenu.style.color ='#d83d3d';
     toggleMenu.style.marginTop ='0px';
     toggleMenu.style.marginRight ='0px';
     document.getElementById("changeMode").style.visibility = "visible";
+
+    // page.style.opacity = '100%';
   }
 }
 
@@ -41,7 +52,7 @@ function mobileMenu() {
 
 
 // DARK MODE
-
+// image caption boxes should turn pink w background when pressed
 
 
 let defaultModeBtn = document.querySelector('.default-mode');

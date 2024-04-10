@@ -627,6 +627,7 @@ h4.image-cap {
     transition: right 1s ease;
     padding-top: 60px;
     padding-left: 20px;
+    z-index: 10;
     /* padding-right: 10px; */
   }
 
@@ -658,11 +659,6 @@ h4.image-cap {
     cursor: pointer;
     z-index: 9000000000000000000;
     font-size: 40px;
-  }
-
-  .toggleMenuOpen {
-    color: white;
-    z-index: 1;
   }
 
 
@@ -794,29 +790,47 @@ a.contact-item:hover {
 }
 
 
-/* day mode settings */
-/* 
-.material-symbols-outlined.default-mode2 {
-	color: white;
-	/* visibility: hidden; */
-/* }
-
-.material-symbols-outlined.day-mode {
-	color: white;
-}
 
 
-.change-mode2 {
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: grid;
-	margin-right: 50px;
-}
 
-.state-day-mode {
-	background-color: white;
-	color: black;
-	border-color: black;
-}
- */ 
+
+/* MEDIA QUERY WIDTH */
+
+ @media screen and (max-width: 990px) {
+
+  .logo-box {
+    padding-bottom:200px;
+    margin:0;
+    height: 200px;
+  }
+  .artwork-svg {
+    visibility: hidden;
+  }
+  .photography-svg {
+    visibility: hidden;
+  }
+  .main-1 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+    grid-row-gap: 80px;
+    margin-top: 0;
+	}
+
+	.main-1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+    align-items: center;
+    /* pointer-events:none; */
+	}
+
+  .box1, .box2, .box3-1, .box3-2, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12-1, .box12-2, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20, .box21, .box22{
+    pointer-events: none;
+  } 
+
+} 
+
+
+
+
