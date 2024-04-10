@@ -794,7 +794,7 @@ a.contact-item:hover {
 
 
 
-/* MEDIA QUERY WIDTH */
+/* MEDIA QUERY WIDTH 990PX */
 
  @media screen and (max-width: 990px) {
 
@@ -814,7 +814,8 @@ a.contact-item:hover {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
     grid-row-gap: 80px;
-    margin-top: 0;
+    margin-top: -100px;
+    max-width: 990px;
 	}
 
 	.main-1{
@@ -827,6 +828,49 @@ a.contact-item:hover {
 
   .box1, .box2, .box3-1, .box3-2, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12-1, .box12-2, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20, .box21, .box22{
     pointer-events: none;
+    padding:0;
+    margin:0;
+  } 
+
+} 
+
+
+/* MEDIA QUERY WIDTH 750 PX */
+
+@media screen and (max-width: 750px) {
+
+  .logo-box {
+    padding-bottom:200px;
+    margin:0;
+    height: 200px;
+  }
+  .artwork-svg {
+    visibility: hidden;
+  }
+  .photography-svg {
+    visibility: hidden;
+  }
+  .main-1 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+    grid-row-gap: 80px;
+    margin-top: -100px;
+    max-width: 750px;
+	}
+
+	.main-1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+    align-items: center;
+    /* pointer-events:none; */
+	}
+
+  .box1, .box2, .box3-1, .box3-2, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12-1, .box12-2, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20, .box21, .box22{
+    pointer-events: none;
+    padding:0;
+    margin:0;
   } 
 
 } 
