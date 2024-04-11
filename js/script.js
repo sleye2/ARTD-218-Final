@@ -1,4 +1,20 @@
 
+let changeOpacity = document.querySelector('.box2');
+
+// get the button from the DOM
+let changeOpacityButton = document.querySelector('.box2');
+
+// add an event listener to the button
+changeOpacityButton.addEventListener("click", changeOpacity);
+
+// create a function that runs on click
+function changeOpacity() {
+changeOpacityBox.style.opacity = '25%';
+    // print the text below to ensure that the function is executed
+    console.log('I have changed the opacity');
+}
+
+
 
 
 
@@ -32,13 +48,9 @@ function mobileMenu() {
     toggleMenu.style.marginRight ='30px';
     document.getElementById("changeMode").style.visibility = "hidden";
 
-    // document.body.style.backgroundColor= "rgb(0,0,0,.2)";
+    
+    document.querySelector('.main-body-content').style.opacity="50%";
 
-    // document.body.style.opacity= "50%";
-
-
-    // page.style.opacity = '50%';
-    // document.getElementById('body').style.opacity = '50%';
     
   } else {
     toggleMenu.style.color ='#d83d3d';
@@ -46,8 +58,9 @@ function mobileMenu() {
     toggleMenu.style.marginRight ='0px';
     document.getElementById("changeMode").style.visibility = "visible";
 
-    // document.body.style.backgroundColor='white';
-    // page.style.opacity = '100%';
+    document.querySelector('.main-body-content').style.opacity="100%";
+
+    
   }
 }
 
