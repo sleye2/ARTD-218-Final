@@ -32,6 +32,10 @@ function mobileMenu() {
     toggleMenu.style.marginRight ='30px';
     document.getElementById("changeMode").style.visibility = "hidden";
 
+    // document.body.style.backgroundColor= "rgb(0,0,0,.2)";
+
+    // document.body.style.opacity= "50%";
+
 
     // page.style.opacity = '50%';
     // document.getElementById('body').style.opacity = '50%';
@@ -42,6 +46,7 @@ function mobileMenu() {
     toggleMenu.style.marginRight ='0px';
     document.getElementById("changeMode").style.visibility = "visible";
 
+    document.body.style.backgroundColor='white';
     // page.style.opacity = '100%';
   }
 }
