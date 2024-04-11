@@ -46,7 +46,7 @@ function mobileMenu() {
     toggleMenu.style.marginRight ='0px';
     document.getElementById("changeMode").style.visibility = "visible";
 
-    document.body.style.backgroundColor='white';
+    // document.body.style.backgroundColor='white';
     // page.style.opacity = '100%';
   }
 }
