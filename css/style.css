@@ -244,7 +244,7 @@ h4.image-cap {
   background-color: white;
 }
 
-.box1:hover, .box2:hover, .box6:hover, .box8:hover, .box9:hover, .box11:hover, .box19:hover, .box20:hover {
+.box1:hover, .box6:hover, .box8:hover, .box9:hover, .box11:hover, .box19:hover, .box20:hover {
   -webkit-transform: scale(1);
   transform: scale(1.5);
   transition: all 1s ease-out;
@@ -299,6 +299,7 @@ h4.image-cap {
   /* opacity: 50%; */
   justify-self: center;
 }
+
 .box2-image {
   background-image: url(/assets/mom.JPG)
 }
@@ -443,6 +444,19 @@ h4.image-cap {
 .box11-image {
   background-image: url(/assets/cat.JPG)
 }
+.square1 {
+  height: 100px;
+  width: 100px;
+  background-color: #a69809;
+  z-index:10;
+  grid-row:4/5;
+  grid-column:2/3;
+  justify-self:right;
+  align-items: flex-end;
+  margin-top: 450px;
+  margin-right: 100px;
+}
+
 .box12-1 {
   /* billie */
   background-color: white;
@@ -500,6 +514,40 @@ h4.image-cap {
 .box14-image {
   background-image: url(/assets/hunan2.JPG)
 }
+
+.square2-1 {
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  grid-row: 5/5;
+  grid-column: 3/4;
+  z-index: 10;
+  justify-self: left;
+  margin-top: 200px
+}
+
+.square2-2 {
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  grid-row: 5/5;
+  grid-column: 3/4;
+  z-index: 10;
+  justify-self: left;
+  margin-top: 250px
+}
+
+.square2-3 {
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  grid-row: 5/5;
+  grid-column: 3/4;
+  z-index: 10;
+  justify-self: left;
+  margin-top: 300px
+}
+
 .box15 {
   /* final smidgen */
   background-color: white;

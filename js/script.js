@@ -1,25 +1,29 @@
 
-let changeOpacity = document.querySelector('.box2');
 
-// get the button from the DOM
-let changeOpacityButton = document.querySelector('.box2');
 
-// add an event listener to the button
-changeOpacityButton.addEventListener("click", changeOpacity);
+document.getElementById("square1").addEventListener("mouseover", mouseOver);
+document.getElementById("square1").addEventListener("mouseout", mouseOut);
 
-// create a function that runs on click
-function changeOpacity() {
-changeOpacityBox.style.opacity = '25%';
-    // print the text below to ensure that the function is executed
-    console.log('I have changed the opacity');
+function mouseOver() {
+  document.getElementById("square1").style.borderRadius = "50%";
+}
+
+function mouseOut() {
+  document.getElementById("square1").style.borderRadius = "0";
 }
 
 
 
+document.querySelectorAll(".elements").addEventListener("mouseover", mouseOver);
+document.querySelectorAll(".elements").addEventListener("mouseout", mouseOut);
 
+function mouseOver() {
+  document.querySelectorAll(".elements").style.borderRadius = "50%";
+}
 
-
-
+function mouseOut() {
+  document.querySelectorAll(".elements").style.borderRadius = "0";
+}
 
 
 
