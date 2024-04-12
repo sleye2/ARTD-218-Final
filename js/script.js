@@ -179,6 +179,8 @@ function changeMode() {
 
     document.getElementById("toggleMenu").style.color = "white";
 
+    // document.getElementById("toggleMenu").style.pointerEvents = "auto";
+
 }
 
 }
