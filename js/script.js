@@ -41,7 +41,6 @@ function mouseOut2() {
 // EXTEND SQUARE 3
 
 document.getElementById("square3-1").addEventListener("mouseover", mouseOver3);
-document.getElementById("square3-1").addEventListener("mouseout", mouseOut3);
 
 function mouseOver3() {
   document.getElementById("square3-2").style.display = "inline";
@@ -50,10 +49,32 @@ function mouseOver3() {
   
 }
 
-function mouseOut3() {
+// SQUARE 4 LENGTHEN AND APPEAR IN SEQUENCE
+
+document.getElementById("square4-1").addEventListener("mouseover", mouseOver4);
+
+function mouseOver4() {
+  document.getElementById("square4-2").style.display = "inline";
 }
 
 
+document.getElementById("square4-2").addEventListener("mouseover", mouseOver41);
+
+function mouseOver41() {
+  document.getElementById("square4-2").style.backgroundColor = "#f7cd97";
+  document.getElementById('square4-3').style.display = "inline";
+}
+
+document.getElementById("square4-3").addEventListener("mouseover", mouseOver42);
+
+function mouseOver42() {
+  document.getElementById("square4-3").style.backgroundColor = "#a69809";
+}
+
+
+
+// #a69809
+// #f7cd97
 
 // ABOUT SLIDER MENU BAR -- AWARD STAR ICON
 // when slider menu is out: darkmode button should be hidden, page should lower opacity, button moves, button changes color
