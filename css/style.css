@@ -954,13 +954,6 @@ a.contact-item:hover {
 
 
 
-
-
-
-
-
-
-
 /* dark mode */
 
 .f-image-cap-pink {
@@ -1038,6 +1031,10 @@ a.contact-item:hover {
   cursor: pointer;
 }
 
+
+
+
+
 /* MEDIA QUERY WIDTH 990PX */
 
 @media screen and (max-width: 990px) {
@@ -1049,6 +1046,10 @@ a.contact-item:hover {
 
   .elements {
     display: none;
+  }
+
+  .state-night-mode .elements {
+    display:none;
   }
 
   .logo-box {
@@ -1228,6 +1229,10 @@ a.contact-item:hover {
 
 @media screen and (max-width: 750px) {
 
+  .state-night-mode .elements {
+    display:none;
+  }
+
   .h-artwork-svg {
     display: inline;
     height: 300px;
@@ -1297,6 +1302,14 @@ a.contact-item:hover {
 
 @media screen and (max-width: 550px) {
 
+  .elements {
+    display:none;
+  }
+
+  .state-night-mode .elements {
+    display:none;
+  }
+
   .h-artwork-svg {
     display: inline;
     height: 200px;
@@ -1310,11 +1323,11 @@ a.contact-item:hover {
 
   .h-photography-svg {
     display: inline;
-    height: 200px;
+    height: 280px;
   }
 
   .h-photography {
-    width: 480px;
+    width: 400px;
     padding: 0;
     margin: 0;
   }
