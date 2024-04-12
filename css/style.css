@@ -145,6 +145,7 @@ https://stackoverflow.com/questions/71355574/smooth-animation-loop-for-horizonta
   z-index: 0;
   margin-left: -190px;
   margin-top: -200px;
+  cursor: pointer;
   /* border: 3px solid #73AD21; */
 }
 
@@ -164,8 +165,10 @@ https://stackoverflow.com/questions/71355574/smooth-animation-loop-for-horizonta
   justify-self: right;
   margin-right: -180px;
   margin-top: -80px;
+  cursor: pointer;
   /* border: 3px solid #73AD21; */
 }
+
 
 .photography-svg:hover {
   filter: invert(45%) sepia(60%) saturate(574%) hue-rotate(338deg) brightness(106%) contrast(83%);
@@ -250,6 +253,7 @@ h4.image-cap {
   transition: all 1s ease-out;
   border: white solid 10px;
   padding-bottom: 55px;
+  cursor: pointer;
   /* border-bottom: none; */
   }
 
@@ -259,6 +263,7 @@ h4.image-cap {
     transition: all 1s ease-out;
     border: white solid 10px;
     padding-bottom: 55px;
+    cursor: pointer;
     /* border-bottom: none; */
     }
 
@@ -268,12 +273,14 @@ h4.image-cap {
   transition: all 1s ease-out;
   border: white solid 10px;
   padding-bottom: 55px;
+  cursor: pointer;
   /* border-bottom: none; */
   }
 
 .f-image-cap:hover {
   background-color: #f7cd97;
   transition: all 1s ease-out;
+  cursor: pointer;
 }
 .box1 {
   /* self portrait */
@@ -455,6 +462,7 @@ h4.image-cap {
   align-items: flex-end;
   margin-top: 450px;
   margin-right: 100px;
+  cursor: pointer;
 }
 
 .box12-1 {
@@ -516,36 +524,39 @@ h4.image-cap {
 }
 
 .square2-1 {
-  background-color: orange;
-  height: 20px;
-  width: 20px;
+  background-color: #f7cd97;
+  height: 25px;
+  width: 25px;
   grid-row: 5/5;
   grid-column: 3/4;
   z-index: 10;
   justify-self: left;
-  margin-top: 200px
+  margin-top: 200px;
+  cursor: pointer;
 }
 
 .square2-2 {
-  background-color: orange;
-  height: 20px;
-  width: 20px;
+  background-color: #f7cd97;
+  height: 25px;
+  width: 25px;
   grid-row: 5/5;
   grid-column: 3/4;
   z-index: 10;
   justify-self: left;
-  margin-top: 250px
+  margin-top: 250px;
+  cursor: pointer;
 }
 
 .square2-3 {
-  background-color: orange;
-  height: 20px;
-  width: 20px;
+  background-color: #f7cd97;
+  height: 25px;
+  width: 25px;
   grid-row: 5/5;
   grid-column: 3/4;
   z-index: 10;
   justify-self: left;
-  margin-top: 300px
+  margin-top: 300px;
+  cursor: pointer;
 }
 
 .box15 {
@@ -589,6 +600,59 @@ h4.image-cap {
 .box17-image {
   background-image: url(/assets/drawing2.JPG)
 }
+.square3-1 {
+    background-color: #879bd3;
+    height: 300px;
+    width: 8px;
+    grid-row: 6/6;
+    grid-column: 2/3;
+    z-index: 10;
+    justify-self: center;
+    margin-top: -305px;
+    margin-left: -150px;
+    cursor: pointer;
+
+}
+
+.square3-2 {
+  display: none;
+  background-color: #cb4f6c;
+  height: 300px;
+  width: 8px;
+  grid-row: 6/6;
+  grid-column: 2/3;
+  z-index: 10;
+  justify-self: center;
+  margin-top: -305px;
+  margin-left: -100px;
+}
+
+.square3-3 {
+  display: none;
+  background-color: #da7840;
+  height: 300px;
+  width: 8px;
+  grid-row: 6/6;
+  grid-column: 2/3;
+  z-index: 10;
+  justify-self: center;
+  margin-top: -305px;
+  margin-left: -50px;
+}
+
+.square3-4 {
+  display: none;
+  background-color: #f7cd97;
+  height: 300px;
+  width: 8px;
+  grid-row: 6/6;
+  grid-column: 2/3;
+  z-index: 10;
+  justify-self: center;
+  margin-top: -305px;
+  margin-left: 0px;
+}
+
 .box18 {
   /* group */
   background-color: white;
@@ -759,7 +823,7 @@ h4.image-cap {
 
 a.contact-item {
   /* background-color: blue; */
-  font-family: noto-sans; sans-serif;
+  font-family: noto-sans, sans-serif;
   font-weight: 400;
   font-size: 13px;
   margin:2px;
@@ -859,6 +923,10 @@ a.contact-item:hover {
     justify-self: center;
   }
 
+  .elements {
+    display: none;
+  }
+
   .logo-box {
     padding:0;
     margin:0;
@@ -880,6 +948,18 @@ a.contact-item:hover {
   .photography-svg {
     display: none;
   }
+
+  .h-artwork-svg:hover {
+    filter: invert(52%) sepia(81%) saturate(1601%) hue-rotate(26deg) brightness(96%) contrast(93%);
+    cursor: pointer;
+  }
+  
+  .h-photography-svg:hover {
+    filter: invert(45%) sepia(60%) saturate(574%) hue-rotate(338deg) brightness(106%) contrast(83%);
+    z-index: 0;
+    cursor: pointer;
+  }
+
   .main-1 {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -999,6 +1079,9 @@ a.contact-item:hover {
     height: 300px;
   }
 
+  .elements {
+    display: none;
+}
 
   .main-1 {
 		display: grid;
