@@ -38,15 +38,22 @@ function mouseOut2() {
 }
 
 
-// EXTEND SQUARE 3
+// make multiple bars appear
 
 document.getElementById("square3-1").addEventListener("mouseover", mouseOver3);
+document.getElementById("square3-1").addEventListener("mouseout", mouseOut3);
 
 function mouseOver3() {
   document.getElementById("square3-2").style.display = "inline";
   document.getElementById("square3-3").style.display = "inline";
   document.getElementById("square3-4").style.display = "inline";
   
+}
+
+function mouseOut3() {
+  document.getElementById("square3-2").style.display = "none";
+  document.getElementById("square3-3").style.display = "none";
+  document.getElementById("square3-4").style.display = "none";
 }
 
 // SQUARE 4 LENGTHEN AND APPEAR IN SEQUENCE
@@ -115,7 +122,7 @@ function mobileMenu() {
 
   if(menu.classList.contains("visible")){
     toggleMenu.style.color ='white';
-    toggleMenu.style.marginTop ='25px';
+    toggleMenu.style.marginTop ='-5px';
     toggleMenu.style.marginRight ='30px';
     document.getElementById("changeMode").style.visibility = "hidden";
 
