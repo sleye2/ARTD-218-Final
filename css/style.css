@@ -87,6 +87,7 @@ https://stackoverflow.com/questions/71355574/smooth-animation-loop-for-horizonta
     z-index: 0;
     margin: 0;
     padding: 0;
+    cursor: pointer;
   }
   
   .m-scroll {
@@ -97,7 +98,7 @@ https://stackoverflow.com/questions/71355574/smooth-animation-loop-for-horizonta
     margin: 0;
     font-size: 0;
     display: inline-block;
-    
+    cursor: pointer;
   }
   
   span.top-scroll {
@@ -656,18 +657,18 @@ h4.image-cap {
   margin-left: 0px;
 }
 .square4-1 {
-  height: 10px;
+  height: 15px;
   width: 450px;
-  background-color: pink;
+  background-color: #d83d3d;
   grid-column: 1/3;
   grid-row: 6/7;
   margin-top: 200px;
   cursor: pointer;
 }
 .square4-2 {
-  height: 250px;
-  width: 10px;
-  background-color: pink;
+  height: 260px;
+  width: 15px;
+  background-color: #d83d3d;
   grid-column: 1/2;
   grid-row: 6/7;
   margin-top: 200px;
@@ -676,13 +677,13 @@ h4.image-cap {
   display: none;
 }
 .square4-3 {
-  height: 10px;
+  height: 15px;
   width: 230px;
-  background-color: pink;
+  background-color: #d83d3d;
   grid-column: 2/2;
   grid-row: 6/7;
   margin-top: 450px;
-  margin-left: -15px;
+  margin-left: -19px;
   justify-self: left;
   cursor: pointer;
   display: none;

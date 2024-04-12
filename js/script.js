@@ -62,13 +62,21 @@ document.getElementById("square4-2").addEventListener("mouseover", mouseOver41);
 
 function mouseOver41() {
   document.getElementById("square4-2").style.backgroundColor = "#f7cd97";
+  document.getElementById('square4-3').style.backgroundColor = "#d83d3d";
   document.getElementById('square4-3').style.display = "inline";
 }
 
 document.getElementById("square4-3").addEventListener("mouseover", mouseOver42);
+document.getElementById("square4-3").addEventListener("mouseout", mouseOut42);
 
 function mouseOver42() {
   document.getElementById("square4-3").style.backgroundColor = "#a69809";
+}
+
+function mouseOut42() {
+  document.getElementById("square4-3").style.display = "none";
+  document.getElementById("square4-2").style.display = "none";
+
 }
 
 
