@@ -410,6 +410,9 @@ h4.image-cap {
   background-color: white;
   height: 300px;
   width: 400px;
+  grid-row:2/4;
+  grid-column: 1/2;
+  margin-top: 450px;
   /* opacity: 50%; */
 }
 
