@@ -79,10 +79,23 @@ function mouseOut42() {
 
 }
 
+// nightmode square 4-1-1 white bar turns into circle
 
+document.getElementById("square4-1-1").addEventListener("mouseover", mouseOver43);
+document.getElementById("square4-1-1").addEventListener("mouseout", mouseOut43);
 
-// #a69809
-// #f7cd97
+function mouseOver43() {
+  document.getElementById("square4-2").style.display = "inline";
+  document.getElementById("square4-2").style.backgroundColor = "white";
+  document.getElementById("square4-3").style.display = "inline";
+  document.getElementById("square4-3").style.backgroundColor = "white";
+}
+
+function mouseOut43() {
+  document.getElementById("square4-2").style.display = "none";
+  document.getElementById("square4-3").style.display = "none";
+}
+
 
 // ABOUT SLIDER MENU BAR -- AWARD STAR ICON
 // when slider menu is out: darkmode button should be hidden, page should lower opacity, button moves, button changes color
@@ -157,6 +170,7 @@ function changeMode() {
     document.getElementById("capBox").style.backgroundColor = "white";
 
     document.getElementById("toggleMenu").style.color = "#d83d3d";
+
 }else{
     defaultModeBtn.style.visibility="visible";
     nightModeBtn.style.visibility="hidden";
