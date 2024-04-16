@@ -665,7 +665,7 @@ h4.image-cap {
 }
 
 .square3-1 {
-  background-color: #879bd3;
+  background-color: #ff9d00;
   height: 300px;
   width: 8px;
   grid-row: 6/6;
@@ -891,14 +891,14 @@ h4.image-cap {
 }
 
 #toggleMenu:hover {
-  color:#879bd3!important;
+  color:#ff9d00!important;
 }
 
-.state-night-mode #toggleMenu:hover {
-  color:#879bd3!important;
+.state-pink-mode #toggleMenu:hover {
+  color:#ff9d00!important;
 }
 
-.state-night-mode #toggleMenu {
+.state-pink-mode #toggleMenu {
   color:white!important;
 }
 
@@ -968,7 +968,7 @@ a.contact-item:hover {
 
 
 
-/* dark mode */
+/* PINK MODE SETTINGS */
 
 .f-image-cap-pink {
   background-color: pink;
@@ -992,7 +992,7 @@ a.contact-item:hover {
 
 /* invert colors hover mode */
 .material-symbols-outlined.mode-button:hover {
-  color:#879bd3;
+  color:#ff9d00;
 }
 
 .material-symbols-outlined.default-mode {
@@ -1001,7 +1001,7 @@ a.contact-item:hover {
 }
 
 
-.material-symbols-outlined.night-mode {
+.material-symbols-outlined.pink-mode {
   /* background-color: pink; */
   color: #d83d3d;
   ;
@@ -1015,32 +1015,32 @@ a.contact-item:hover {
   display: grid;
 }
 
-.state-night-mode a {
+.state-pink-mode a {
   color: white;
 }
 
-.state-night-mode a:hover {
+.state-pink-mode a:hover {
   color: black;
 }
 
-.state-night-mode {
+.state-pink-mode {
   background-color: pink;
   visibility: 'hidden'
     /* color: white; */
 }
 
 
-.state-night-mode .elements {
+.state-pink-mode .elements {
   background-color: white;
 }
 
-.state-night-mode .square4-1,
+.state-pink-mode .square4-1,
 .square4-2,
 .square4-3 {
   display: none;
 }
 
-.state-night-mode .square4-1-1 {
+.state-pink-mode .square4-1-1 {
   display:inline;
   height: 15px;
   width: 450px;
@@ -1068,7 +1068,7 @@ a.contact-item:hover {
     display: none;
   }
 
-  .state-night-mode .elements {
+  .state-pink-mode .elements {
     display:none;
   }
 
@@ -1249,7 +1249,7 @@ a.contact-item:hover {
 
 @media screen and (max-width: 750px) {
 
-  .state-night-mode .elements {
+  .state-pink-mode .elements {
     display:none;
   }
 
@@ -1326,7 +1326,7 @@ a.contact-item:hover {
     display:none;
   }
 
-  .state-night-mode .elements {
+  .state-pink-mode .elements {
     display:none;
   }
 

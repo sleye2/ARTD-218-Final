@@ -16,7 +16,7 @@ function mouseOut() {
 }
 
 
-// MAKE ORANGE SQUARES INCREASE SIZE
+// EXTEND 3 BEIGE SQUARES
 
 document.getElementById("square2-1").addEventListener("mouseover", mouseOver2);
 document.getElementById("square2-2").addEventListener("mouseover", mouseOver2);
@@ -38,7 +38,7 @@ function mouseOut2() {
 }
 
 
-// make multiple bars appear
+// HOVER BLUE BAR MAKES MULTI-COLORED BARS APPEAR 
 
 document.getElementById("square3-1").addEventListener("mouseover", mouseOver3);
 document.getElementById("square3-1").addEventListener("mouseout", mouseOut3);
@@ -56,7 +56,7 @@ function mouseOut3() {
   document.getElementById("square3-4").style.display = "none";
 }
 
-// SQUARE 4 LENGTHEN AND APPEAR IN SEQUENCE
+// SEQUENCE: HOVER ON FIRST RED BAR APPEARS SECOND RED BAR, HOVER ON SECOND RED BAR TURNS BEIGE AND MAKES THIRD RED BAR APPEAR, HOVER ON THIRD RED BAR TURNS IT GREEN
 
 document.getElementById("square4-1").addEventListener("mouseover", mouseOver4);
 
@@ -86,7 +86,7 @@ function mouseOut42() {
 
 }
 
-// nightmode square 4-1-1 white bar turns into circle
+// PINKMODE: 4TH OBJECT BARS: HOVER OVER FIRST WHITE BAR MAKES OTHER 2 APPEAR (INSTEAD OF THE SEQUENCE ABOVE)
 
 document.getElementById("square4-1-1").addEventListener("mouseover", mouseOver43);
 document.getElementById("square4-1-1").addEventListener("mouseout", mouseOut43);
@@ -105,7 +105,7 @@ function mouseOut43() {
 
 
 // ABOUT SLIDER MENU BAR -- AWARD STAR ICON
-// when slider menu is out: darkmode button should be hidden, page should lower opacity, button moves, button changes color
+// when slider menu is out: darkmode button should be hidden, BODY page should lower opacity, button moves to be aligned
 
 const toggleMenu = document.getElementById("toggleMenu");
 
@@ -153,7 +153,7 @@ function mobileMenu() {
 
 let defaultModeBtn = document.querySelector('.default-mode');
 
-let nightModeBtn = document.querySelector('.night-mode');
+let pinkModeBtn = document.querySelector('.pink-mode');
 
 
 let page = document.querySelector('body');
@@ -161,18 +161,18 @@ let page = document.querySelector('body');
 
 defaultModeBtn.addEventListener('click', changeMode);
 
-nightModeBtn.addEventListener('click', changeMode);
+pinkModeBtn.addEventListener('click', changeMode);
 
 
 
 function changeMode() {
   console.log('this is working');
-  page.classList.toggle('state-night-mode');
+  page.classList.toggle('state-pink-mode');
   
 
   if(defaultModeBtn.style.visibility==='visible'){
     defaultModeBtn.style.visibility="hidden";
-    nightModeBtn.style.visibility="visible";
+    pinkModeBtn.style.visibility="visible";
     
     document.getElementById("capBox").style.backgroundColor = "white";
 
@@ -180,7 +180,7 @@ function changeMode() {
 
 }else{
     defaultModeBtn.style.visibility="visible";
-    nightModeBtn.style.visibility="hidden";
+    pinkModeBtn.style.visibility="hidden";
     
     document.getElementById("capBox").style.backgroundColor = "pink";
 
